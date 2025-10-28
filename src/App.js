@@ -19,6 +19,7 @@ import VerifyBarbershopsPage from "./pages/admin/VerifyBarbershopsPage";
 // import AddAdminPage from './pages/admin/AddAdminPage';
 import ManageAdminsPage from "./pages/admin/ManageAdminsPage";
 import BarbershopDetailPage from './pages/admin/BarbershopDetailPage';
+import ManageReviewsPage from './pages/admin/ManageReviewsPage';
 
 import ProtectedRoute from "./routes/ProtectedRoute";
 
@@ -63,6 +64,9 @@ const AppRoutes = () => {
           <Route path="/admin/verify-barbershops" element={<VerifyBarbershopsPage />} />
           <Route path="/admin/verify-barbershops/:barbershopId" element={<BarbershopDetailPage />} />
           <Route path="/admin/manage-admins" element={<ManageAdminsPage />} />
+          <Route path="/admin/manage-reviews" element={<ManageReviewsPage />} />
+
+          
         </Route>
 
         <Route path="/" element={<HomeRedirect />} />

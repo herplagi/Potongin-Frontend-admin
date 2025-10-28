@@ -5,6 +5,8 @@ import { toast } from 'react-toastify';
 import api from '../../services/api';
 import { FiFilter, FiStar, FiAlertTriangle, FiCheckCircle, FiXCircle, FiFlag } from 'react-icons/fi';
 
+// Catatan: File ini sudah siap digunakan dengan backend yang ada
+
 const ManageReviewsPage = () => {
     const [reviews, setReviews] = useState([]);
     const [loading, setLoading] = useState(true);

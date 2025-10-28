@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { RxDashboard } from "react-icons/rx";
-import { FiCheckSquare, FiLogOut, FiUserPlus } from "react-icons/fi";
+import { FiCheckSquare, FiLogOut, FiUserPlus, FiStar } from "react-icons/fi";
 
 const Sidebar = () => {
   const { logout } = useAuth();
@@ -49,6 +49,16 @@ const Sidebar = () => {
             <FiUserPlus className="w-5 h-5" />
             <span className="mx-4 font-medium">Kelola Admin</span>
           </NavLink>
+          <NavLink
+            to="/admin/manage-reviews"
+            className={({ isActive }) =>
+              isActive ? `${linkClasses} ${activeLinkClasses}` : linkClasses
+            }
+          >
+            <FiStar className="w-5 h-5" />
+            <span className="mx-4 font-medium">Kelola Review</span>
+          </NavLink>
+
           {/* Tambahkan link lain di sini nanti */}
         </nav>
         <div>
