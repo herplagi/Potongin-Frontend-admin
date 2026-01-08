@@ -33,7 +33,7 @@ const ForgotPasswordPage = () => {
             <div className="flex flex-col items-center justify-center px-4 py-12 bg-white sm:px-6 lg:flex-none lg:px-20 xl:px-24">
                 <div className="w-full max-w-sm mx-auto lg:w-96">
                     <div>
-                        <h2 className="text-3xl font-extrabold text-blue-600">
+                        <h2 className="text-3xl font-extrabold text-indigo-600">
                             Lupa Password?
                         </h2>
                         <p className="mt-2 text-sm text-gray-600">
