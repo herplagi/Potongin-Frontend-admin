@@ -14,6 +14,8 @@ import AdminLayout from "./components/admin/AdminLayout";
 import LoginPage from "./pages/LoginPage";
 // import DashboardPage from './pages/DashboardPage';
 import RegisterPage from "./pages/RegisterPage";
+import ForgotPasswordPage from "./pages/ForgotPasswordPage";
+import ResetPasswordPage from "./pages/ResetPasswordPage";
 import AdminDashboardPage from "./pages/admin/AdminDashboardPage";
 import VerifyBarbershopsPage from "./pages/admin/VerifyBarbershopsPage";
 // import AddAdminPage from './pages/admin/AddAdminPage';
@@ -52,6 +54,8 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+        <Route path="/reset-password" element={<ResetPasswordPage />} />
 
         <Route
           element={
