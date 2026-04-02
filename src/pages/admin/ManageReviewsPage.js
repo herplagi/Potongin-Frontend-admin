@@ -111,7 +111,12 @@ const ManageReviewsPage = () => {
                 await api.delete(`/reviews/admin/${selectedReview.review_id}`);
                 toast.success('Review berhasil dihapus');
             } else {
-                const status = moderationAction === 'approve' ? 'approved' : 'rejected';
+                const status =
+                    moderationAction === 'approve'
+                        ? 'approved'
+                        : moderationAction === 'reject'
+                            ? 'rejected'
+                            : 'pending';
                 await api.patch(`/reviews/admin/${selectedReview.review_id}/moderate`, {
                     status,
                     rejection_reason: moderationAction === 'reject' ? moderationNote : null,

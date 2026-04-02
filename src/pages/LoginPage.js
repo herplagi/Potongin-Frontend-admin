@@ -48,7 +48,7 @@ const LoginPage = () => {
                         <p className="mt-2 text-sm text-slate-400">
                             Belum punya akun?{' '}
                             <Link to="/register" className="font-medium text-indigo-400 hover:text-indigo-300 transition-colors">
-                                Daftar gratis
+                                Daftar di sini
                             </Link>
                         </p>
                     </div>
@@ -87,7 +87,7 @@ const LoginPage = () => {
                                     Password
                                 </label>
                                 <Link to="/forgot-password" className="text-xs text-indigo-400 hover:text-indigo-300 transition-colors">
-                                    Lupa password?
+                                    Lupa Password ?
                                 </Link>
                             </div>
                             <input
@@ -108,7 +108,7 @@ const LoginPage = () => {
                             type="submit"
                             className="w-full flex justify-center items-center gap-2 px-4 py-3 text-sm font-semibold text-white bg-indigo-600 rounded-xl hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 focus:ring-indigo-500 transition-all active:scale-[0.98]"
                         >
-                            Masuk
+                            Login
                         </button>
                     </form>
                 </div>
